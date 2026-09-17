@@ -1,0 +1,23 @@
+[Unit]
+Description=Arabcha-o'zbekcha so'z boyligi Telegram boti
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# --- o'zingiznikiga moslang ---
+User=ubuntu
+WorkingDirectory=/home/ubuntu/arab-uzbek-vocab
+EnvironmentFile=/home/ubuntu/arab-uzbek-vocab/.env
+ExecStart=/home/ubuntu/arab-uzbek-vocab/venv/bin/python /home/ubuntu/arab-uzbek-vocab/bot.py
+
+Restart=always
+RestartSec=5
+
+# yengil xavfsizlik cheklovlari
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target
