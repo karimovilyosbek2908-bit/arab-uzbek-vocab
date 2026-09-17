@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+.env
+words.db
+words.db-wal
+words.db-shm
+bot.log
+bot.pid

@@ -1,0 +1,6 @@
+# Asosiy kutubxonalar — Termux uchun yengil
+python-telegram-bot>=20.7,<23   # async Telegram bot API (v20+), faqat httpx ga bog'liq
+python-dotenv>=1.0.1            # .env fayldan TELEGRAM_BOT_TOKEN o'qish
+pypdf>=4.0                      # PDF'ni parse qilish uchun (faqat parse_pdf.py uchun kerak)
+
+# SQLite Python standart kutubxonasida bor — alohida o'rnatish shart emas
